@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sanjay Cafe - Your cozy spot for delicious coffee, snacks, and meals in [Your City]. Visit us for a warm experience!">
+  <meta name="keywords" content="Sanjay Cafe, coffee shop, cafe in [Your City], best coffee, snacks, meals">
+  <meta name="author" content="Sanjay Cafe">
+  <title>Sanjay Cafe - Cozy Coffee & Delicious Bites</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f3e9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #6f4e37;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      background-color: #3c2f2f;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      color: #e8b923;
+    }
+    .content {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .content h2 {
+      color: #6f4e37;
+      margin-bottom: 1rem;
+    }
+    .menu-item {
+      margin: 1rem 0;
+    }
+    .menu-item h3 {
+      color: #3c2f2f;
+    }
+    .contact, .location {
+      margin-top: 2rem;
+    }
+    footer {
+      background-color: #3c2f2f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      .content {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sanjay Cafe</h1>
+    <p>Your cozy spot for coffee and delicious bites in [Your City]</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="content">
+    <section id="about">
+      <h2>About Sanjay Cafe</h2>
+      <p>Welcome to Sanjay Cafe, where we serve freshly brewed coffee, mouth-watering snacks, and hearty meals in a warm, inviting atmosphere. Located in the heart of [Your City], we’re your go-to spot for a relaxing break or a quick bite.</p>
+    </section>
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <div class="menu-item">
+        <h3>Espresso</h3>
+        <p>Rich and bold, made with our signature beans - $3.50</p>
+      </div>
+      <div class="menu-item">
+        <h3>Club Sandwich</h3>
+        <p>Freshly made with chicken, lettuce, and mayo - $6.00</p>
+      </div>
+      <div class="menu-item">
+        <h3>Chocolate Pastry</h3>
+        <p>Decadent chocolate delight - $4.00</p>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p>Email: contact@sanjaycafe.com</p>
+      <p>Phone: +91-123-456-7890</p>
+    </section>
+    <section class="location">
+      <h2>Find Us</h2>
+      <p>123 Cafe Street, [Your City], [Your State], India</p>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 Sanjay Cafe. All rights reserved.</p>
+  </footer>
+  <script>
+    // Smooth scroll for navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const section = document.querySelector(this.getAttribute('href'));
+        section.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+    // Alert for contact section
+    document.querySelector('#contact').addEventListener('click', () => {
+      alert('Reach us at contact@sanjaycafe.com or +91-123-456-7890');
+    });
+  </script>
+</body>
+</html>
